@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>💰 Secure Bank</h1>
+    <div class="nav-links">
+      <button onclick="showForm('open')">Open Account</button>
+      <button onclick="showForm('deposit')">Deposit</button>
+      <button onclick="showForm('withdraw')">Withdraw</button>
+      <button onclick="showForm('transfer')">Transfer</button>
+      <button onclick="showForm('statement')">Statement</button>
+      <button onclick="listAccounts()">List Accounts</button>
+      <button onclick="showForm('search')">Search Account</button>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="form-container">
+      <h2 id="form-title">Welcome to Secure Bank</h2>
+      <p class="tagline">Your trusted partner in managing finances</p>
+      <div id="form-area"></div>
+    </div>
+
+    <div class="output-container">
+      <h3>Result</h3>
+      <pre id="output">Please choose an operation to begin.</pre>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Secure Bank | Powered by Java + HTML + CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
